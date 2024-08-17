@@ -1,5 +1,5 @@
 package TikTakToe.model;
 
 public enum GameState {
-    RUNNING, CROSS_WON, CIRCLE_WON
+    RUNNING, CROSS_WON, CIRCLE_WON, DRAW
 }

@@ -72,16 +72,17 @@ public interface Board {
     void setLevel(int level);
 
     /**
-     * Checks if the game is over, i.e., one player has won.
+     * Checks if the game is over, i.e., one player has won, or they drew.
      *
      * @return {@code true} if and only if the game is over.
      */
     boolean isGameOver();
 
     /**
-     * Checks if the game state is won. Only valid if the game is already over.
+     * Checks if the game state is won or a draw.
+     * Only valid if the game is already over.
      *
-     * @return The winner.
+     * @return The winner or {@code GameState.DRAW}.
      * @throws IllegalStateException If the game is not over yet, then there is
      *         no winner.
      */
